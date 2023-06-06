@@ -30,10 +30,10 @@ namespace HelloWPF
 
         private void btnDisplay_Click(object sender, RoutedEventArgs e)
         {
-            lstDisplay.Items.Add($"ID      Name");
+            lstDisplay.Items.Add($"ID \t\t\t Name");
             foreach(Student student in students)
             {
-                lstDisplay.Items.Add($"{student.ID}     {student.Name}"); 
+                lstDisplay.Items.Add($"{student.ID} \t\t\t {student.Name}"); 
             }
         }
 

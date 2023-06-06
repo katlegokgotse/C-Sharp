@@ -1,0 +1,23 @@
+﻿<Window x:Class="WorkingWithMultipleWindows.AddModule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkingWithMultipleWindows"
+        mc:Ignorable="d"
+        Title="Add your modules" Height="492" Width="800">
+    <Grid Background="#FFD83A3A" Margin="0,0,0,-263">
+        <Label Foreground="#fff" Content="Module Name" HorizontalAlignment="Left" Margin="124,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.973,-1.616" FontSize="20" FontWeight="Bold" FontFamily="Arial Black"/>
+        <Label Foreground="#fff" Content="Course" HorizontalAlignment="Left" Margin="126,8,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.973,-1.616" FontSize="20" FontWeight="Bold" FontFamily="Arial Black"/>
+        <TextBox x:Name ="txtModule" HorizontalAlignment="Left" Margin="352,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="322" Height="36" FontSize="20"/>
+        <TextBox x:Name ="txtCourseCode" HorizontalAlignment="Left" Margin="352,6,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="322" Height="36" FontSize="20"/>
+        <Button x:Name ="btnConfirm" Content="Add to list" HorizontalAlignment="Center" Margin="0,394,0,0" VerticalAlignment="Top" Height="56" Width="546" FontSize="36" FontWeight="Bold" FontFamily="Arial Narrow" Background="#FF131212" Foreground="White" Click="btnConfirm_Click"/>
+
+        <Label Foreground="#fff" Content="Hours" HorizontalAlignment="Left" Margin="130,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.973,-1.616" FontSize="20" FontWeight="Bold" FontFamily="Arial Black"/>
+        <TextBox x:Name ="txtHours" HorizontalAlignment="Left" Margin="354,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="320" Height="36" FontSize="20"/>
+        <ListBox x:Name="lblDisplay" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="134,148,118,0" Height="232" VerticalAlignment="Top"/>
+        <Button x:Name ="btnClose" Content="Close" HorizontalAlignment="Left" Margin="134,533,0,0" VerticalAlignment="Top" Height="56" Width="546" FontSize="36" FontWeight="Bold" FontFamily="Arial Narrow" Click="btnClose_Click"/>
+        <Button x:Name ="btnDisplay" Content="Display" HorizontalAlignment="Left" Margin="132,460,0,0" VerticalAlignment="Top" Height="56" Width="546" FontSize="36" FontWeight="Bold" FontFamily="Arial Narrow" Click="btnDisplay_Click"/>
+
+    </Grid>
+</Window>
